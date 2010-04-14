@@ -3,4 +3,4 @@
 NODESTREAM
 ----------
 
-This is the installation profile for Newspilot.
+This is the installation profile for NodeStream.
