@@ -52,7 +52,7 @@ projects[flag_note][type] = "module"
 projects[flag_note][subdir] = "contrib"
 projects[flag_note][download][type] = "cvs"
 projects[flag_note][download][module] = "contributions/modules/flag_note"
-projects[flag_note][download][revision] = "DRUPAL-6--2"
+projects[flag_note][download][revision] = "DRUPAL-6--2:2010-04-15"
 
 projects[imageapi][subdir] = "contrib"
 projects[imageapi][version] = "1.6"
@@ -135,7 +135,7 @@ projects[semanticviews][type] = "module"
 projects[semanticviews][subdir] = "contrib"
 projects[semanticviews][download][type] = "cvs"
 projects[semanticviews][download][module] = "contributions/modules/semanticviews"
-projects[semanticviews][download][revision] = "DRUPAL-6--1"
+projects[semanticviews][download][revision] = "DRUPAL-6--1:2010-04-15"
 ; http://drupal.org/node/749666
 projects[semanticviews][patch][] = "http://drupal.org/files/issues/semanticviews-comma-sep-stripes-2.patch"
 
@@ -148,40 +148,42 @@ projects[imagecachereference][download][url] = "git@github.com:nodeone/drupal-im
 
 ; NodeStream
 
-projects[ns-blog][type] = "module"
-projects[ns-blog][subdir] = "nodestream"
-projects[ns-blog][download][type] = "git"
-projects[ns-blog][download][url] = "git@github.com:nodeone/drupal-ns-blog.git"
+; See ./scripts/clone-private-repos.sh
 
-projects[ns-channel][type] = "module"
-projects[ns-channel][subdir] = "nodestream"
-projects[ns-channel][download][type] = "git"
-projects[ns-channel][download][url] = "git@github.com:nodeone/drupal-ns-channel.git"
+;projects[ns-blog][type] = "module"
+;projects[ns-blog][subdir] = "nodestream"
+;projects[ns-blog][download][type] = "git"
+;projects[ns-blog][download][url] = "git@github.com:nodeone/drupal-ns-blog.git"
 
-projects[ns-core][type] = "module"
-projects[ns-core][subdir] = "nodestream"
-projects[ns-core][download][type] = "git"
-projects[ns-core][download][url] = "git@github.com:nodeone/drupal-ns-core.git"
+;projects[ns-channel][type] = "module"
+;projects[ns-channel][subdir] = "nodestream"
+;projects[ns-channel][download][type] = "git"
+;projects[ns-channel][download][url] = "git@github.com:nodeone/drupal-ns-channel.git"
 
-projects[ns-imagecache][type] = "module"
-projects[ns-imagecache][subdir] = "nodestream"
-projects[ns-imagecache][download][type] = "git"
-projects[ns-imagecache][download][url] = "git@github.com:nodeone/drupal-ns-imagecache.git"
+;projects[ns-core][type] = "module"
+;projects[ns-core][subdir] = "nodestream"
+;projects[ns-core][download][type] = "git"
+;projects[ns-core][download][url] = "git@github.com:nodeone/drupal-ns-core.git"
 
-projects[ns-layout][type] = "module"
-projects[ns-layout][subdir] = "nodestream"
-projects[ns-layout][download][type] = "git"
-projects[ns-layout][download][url] = "git@github.com:nodeone/drupal-ns-layout.git"
+;projects[ns-imagecache][type] = "module"
+;projects[ns-imagecache][subdir] = "nodestream"
+;projects[ns-imagecache][download][type] = "git"
+;projects[ns-imagecache][download][url] = "git@github.com:nodeone/drupal-ns-imagecache.git"
 
-projects[ns-test][type] = "module"
-projects[ns-test][subdir] = "nodestream"
-projects[ns-test][download][type] = "git"
-projects[ns-test][download][url] = "git@github.com:nodeone/drupal-ns-test.git"
+;projects[ns-layout][type] = "module"
+;projects[ns-layout][subdir] = "nodestream"
+;projects[ns-layout][download][type] = "git"
+;projects[ns-layout][download][url] = "git@github.com:nodeone/drupal-ns-layout.git"
 
-projects[ns-ui][type] = "module"
-projects[ns-ui][subdir] = "nodestream"
-projects[ns-ui][download][type] = "git"
-projects[ns-ui][download][url] = "git@github.com:nodeone/drupal-ns-ui.git"
+;projects[ns-test][type] = "module"
+;projects[ns-test][subdir] = "nodestream"
+;projects[ns-test][download][type] = "git"
+;projects[ns-test][download][url] = "git@github.com:nodeone/drupal-ns-test.git"
+
+;projects[ns-ui][type] = "module"
+;projects[ns-ui][subdir] = "nodestream"
+;projects[ns-ui][download][type] = "git"
+;projects[ns-ui][download][url] = "git@github.com:nodeone/drupal-ns-ui.git"
 
 ; Developer
 
@@ -193,9 +195,11 @@ projects[simpletest][version] = "2.10"
 
 ; Themes
 
-projects[ns-theme][type] = "theme"
-projects[ns-theme][download][type] = "git"
-projects[ns-theme][download][url] = "git@github.com:nodeone/drupal-ns-theme.git"
+; See ./scripts/clone-private-repos.sh
+
+;projects[ns-theme][type] = "theme"
+;projects[ns-theme][download][type] = "git"
+;projects[ns-theme][download][url] = "git@github.com:nodeone/drupal-ns-theme.git"
 
 projects[precision][type] = "theme"
 projects[precision][download][type] = "git"

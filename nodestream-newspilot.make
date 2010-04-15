@@ -23,13 +23,15 @@ projects[deploy][type] = "module"
 projects[deploy][subdir] = "contrib"
 projects[deploy][download][type] = "cvs"
 projects[deploy][download][module] = "contributions/modules/deploy"
-projects[deploy][download][revision] = "DRUPAL-6--1"
+projects[deploy][download][revision] = "DRUPAL-6--1:2010-04-15"
 ; http://drupal.org/node/642584
 projects[deploy][patch][] = "http://drupal.org/files/issues/642584-8.patch"
 
 ; Custom
 
-projects[newspilot_service][type] = "module"
-projects[newspilot_service][subdir] = "custom"
-projects[newspilot_service][download][type] = "git"
-projects[newspilot_service][download][url] = "git@github.com:nodeone/drupal-newspilot-service.git"
+; See ./scripts/clone-private-repos.sh
+
+;projects[newspilot_service][type] = "module"
+;projects[newspilot_service][subdir] = "custom"
+;projects[newspilot_service][download][type] = "git"
+;projects[newspilot_service][download][url] = "git@github.com:nodeone/drupal-newspilot-service.git"
