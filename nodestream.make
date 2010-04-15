@@ -7,6 +7,8 @@ core = 6.x
 projects[pressflow][type] = "core"
 projects[pressflow][download][type] = "get"
 projects[pressflow][download][url] = "http://launchpad.net/pressflow/6.x/6.16.77/+download/pressflow-6.16.77.tar.gz"
+; http://drupal.org/node/265973
+projects[pressflow][patch][] = "http://drupal.org/files/issues/xmlrpc_33.patch"
 
 ; Contrib
 
@@ -90,6 +92,9 @@ projects[pollfield][version] = "1.11-beta1"
 
 projects[print][subdir] = "contrib"
 projects[print][version] = "1.10"
+
+projects[revision_moderation][subdir] = "contrib"
+projects[revision_moderation][version] = "1.0-alpha2"
 
 projects[rules][subdir] = "contrib"
 projects[rules][version] = "1.2"

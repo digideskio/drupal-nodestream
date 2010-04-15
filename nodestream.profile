@@ -82,6 +82,7 @@ function nodestream_profile_modules() {
     'page_manager',
     'pollfield',
     'print',
+    'revision_moderation',
     'rules',
     'rules_admin',
     'tablefield',
