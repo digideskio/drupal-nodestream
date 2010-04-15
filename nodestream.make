@@ -135,9 +135,9 @@ projects[semanticviews][type] = "module"
 projects[semanticviews][subdir] = "contrib"
 projects[semanticviews][download][type] = "cvs"
 projects[semanticviews][download][module] = "contributions/modules/semanticviews"
-projects[semanticviews][download][revision] = "DRUPAL-6--1:2010-04-15"
+projects[semanticviews][download][revision] = "DRUPAL-6--1:2010-04-05"
 ; http://drupal.org/node/749666
-projects[semanticviews][patch][] = "http://drupal.org/files/issues/semanticviews-comma-sep-stripes-2.patch"
+projects[semanticviews][patch][] = "http://github.com/downloads/nodeone/drupal-precision/semanticviews-translation-and-comma-separation.patch"
 
 ; Custom
 
