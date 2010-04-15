@@ -7,7 +7,7 @@
 MODULE_PATH="sites/all/modules/nodestream"
 THEME_PATH="sites/all/themes"
 
-git clone git@github.com:nodeone/drupal-newspilot-service.git "$THEME_PATH/newspilot-service"
+git clone git@github.com:nodeone/drupal-newspilot-service.git "$MODULE_PATH/newspilot_service"
 
 git clone git@github.com:nodeone/drupal-ns-blog.git "$MODULE_PATH/ns_blog"
 
