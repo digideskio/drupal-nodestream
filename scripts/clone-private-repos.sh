@@ -23,4 +23,4 @@ git clone git@github.com:nodeone/drupal-ns-test.git "$MODULE_PATH/ns_test"
 
 git clone git@github.com:nodeone/drupal-ns-ui.git "$MODULE_PATH/ns_ui"
 
-git clone git@github.com:nodeone/drupal-ns-layout.git "$THEME_PATH/ns_theme"
+git clone git@github.com:nodeone/drupal-ns-theme.git "$THEME_PATH/ns_theme"
