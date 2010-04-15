@@ -94,12 +94,6 @@ projects[print][version] = "1.10"
 projects[rules][subdir] = "contrib"
 projects[rules][version] = "1.2"
 
-projects[semanticviews][type] = "module"
-projects[semanticviews][subdir] = "contrib"
-projects[semanticviews][download][type] = "cvs"
-projects[semanticviews][download][module] = "contributions/modules/semanticviews"
-projects[semanticviews][download][revision] = "DRUPAL-6--1"
-
 projects[session_api][subdir] = "contrib"
 projects[session_api][version] = "1.2"
 
@@ -130,12 +124,59 @@ projects[views_slideshow][version] = "2.0-beta4"
 projects[webform][subdir] = "contrib"
 projects[webform][version] = "3.0-beta4"
 
+; Patched
+
+projects[semanticviews][type] = "module"
+projects[semanticviews][subdir] = "contrib"
+projects[semanticviews][download][type] = "cvs"
+projects[semanticviews][download][module] = "contributions/modules/semanticviews"
+projects[semanticviews][download][revision] = "DRUPAL-6--1"
+; http://drupal.org/node/749666
+projects[semanticviews][patch][] = "http://drupal.org/files/issues/semanticviews-comma-sep-stripes-2.patch"
+
 ; Custom
 
 projects[imagecachereference][type] = "module"
 projects[imagecachereference][subdir] = "custom"
 projects[imagecachereference][download][type] = "git"
-projects[imagecachereference][download][url] = "http://github.com/nodeone/drupal-imagecachereference.git"
+projects[imagecachereference][download][url] = "git@github.com:nodeone/drupal-imagecachereference.git"
+
+; NodeStream
+
+projects[ns-blog][type] = "module"
+projects[ns-blog][subdir] = "nodestream"
+projects[ns-blog][download][type] = "git"
+projects[ns-blog][download][url] = "git@github.com:nodeone/drupal-ns-blog.git"
+
+projects[ns-channel][type] = "module"
+projects[ns-channel][subdir] = "nodestream"
+projects[ns-channel][download][type] = "git"
+projects[ns-channel][download][url] = "git@github.com:nodeone/drupal-ns-channel.git"
+
+projects[ns-core][type] = "module"
+projects[ns-core][subdir] = "nodestream"
+projects[ns-core][download][type] = "git"
+projects[ns-core][download][url] = "git@github.com:nodeone/drupal-ns-core.git"
+
+projects[ns-imagecache][type] = "module"
+projects[ns-imagecache][subdir] = "nodestream"
+projects[ns-imagecache][download][type] = "git"
+projects[ns-imagecache][download][url] = "git@github.com:nodeone/drupal-ns-imagecache.git"
+
+projects[ns-layout][type] = "module"
+projects[ns-layout][subdir] = "nodestream"
+projects[ns-layout][download][type] = "git"
+projects[ns-layout][download][url] = "git@github.com:nodeone/drupal-ns-layout.git"
+
+projects[ns-test][type] = "module"
+projects[ns-test][subdir] = "nodestream"
+projects[ns-test][download][type] = "git"
+projects[ns-test][download][url] = "git@github.com:nodeone/drupal-ns-test.git"
+
+projects[ns-ui][type] = "module"
+projects[ns-ui][subdir] = "nodestream"
+projects[ns-ui][download][type] = "git"
+projects[ns-ui][download][url] = "git@github.com:nodeone/drupal-ns-ui.git"
 
 ; Developer
 
@@ -145,43 +186,15 @@ projects[devel][version] = "1.18"
 projects[simpletest][subdir] = "developer"
 projects[simpletest][version] = "2.10"
 
-; NodeStream
-
-projects[ns-blog][subdir] = "nodestream"
-projects[ns-blog][download][type] = "git"
-projects[ns-blog][download][url] = "http://github.com/nodeone/drupal-ns-blog.git"
-
-projects[ns-channel][subdir] = "nodestream"
-projects[ns-channel][download][type] = "git"
-projects[ns-channel][download][url] = "http://github.com/nodeone/drupal-ns-channel.git"
-
-projects[ns-core][subdir] = "nodestream"
-projects[ns-core][download][type] = "git"
-projects[ns-core][download][url] = "http://github.com/nodeone/drupal-ns-core.git"
-
-projects[ns-imagecache][subdir] = "nodestream"
-projects[ns-imagecache][download][type] = "git"
-projects[ns-imagecache][download][url] = "http://github.com/nodeone/drupal-ns-imagecache.git"
-
-projects[ns-layout][subdir] = "nodestream"
-projects[ns-layout][download][type] = "git"
-projects[ns-layout][download][url] = "http://github.com/nodeone/drupal-ns-layout.git"
-
-projects[ns-test][subdir] = "nodestream"
-projects[ns-test][download][type] = "git"
-projects[ns-test][download][url] = "http://github.com/nodeone/drupal-ns-test.git"
-
-projects[ns-ui][subdir] = "nodestream"
-projects[ns-ui][download][type] = "git"
-projects[ns-ui][download][url] = "http://github.com/nodeone/drupal-ns-ui.git"
-
 ; Themes
 
+projects[ns-theme][type] = "theme"
 projects[ns-theme][download][type] = "git"
-projects[ns-theme][download][url] = "http://github.com/nodeone/drupal-ns-theme.git"
+projects[ns-theme][download][url] = "git@github.com:nodeone/drupal-ns-theme.git"
 
+projects[precision][type] = "theme"
 projects[precision][download][type] = "git"
-projects[precision][download][url] = "http://github.com/nodeone/drupal-precision.git"
+projects[precision][download][url] = "git@github.com:nodeone/drupal-precision.git"
 
 ; Libraries
 
