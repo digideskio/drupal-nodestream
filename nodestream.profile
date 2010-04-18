@@ -306,7 +306,7 @@ function nodestream_profile_tasks(&$task, $url) {
   variable_set('theme_default', 'ns_theme');
   variable_set('admin_theme', 'garland');
   variable_set('node_admin_theme', 1);
-  variable_set('admin_theme_path', "noderelationships/*\ntaxonomy/term/*/*/admin");
+  variable_set('admin_theme_path', "noderelationships/*\ntaxonomy/term/*/*/admin\nhelp/*");
   variable_set('admin_theme_admin_theme_batch', 1);
 
   // Configure the Admin toolbar.
