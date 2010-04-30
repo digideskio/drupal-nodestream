@@ -146,45 +146,6 @@ projects[imagecachereference][subdir] = "custom"
 projects[imagecachereference][download][type] = "git"
 projects[imagecachereference][download][url] = "git@github.com:nodeone/drupal-imagecachereference.git"
 
-; NodeStream
-
-; See ./scripts/clone-private-repos.sh
-
-;projects[ns-blog][type] = "module"
-;projects[ns-blog][subdir] = "nodestream"
-;projects[ns-blog][download][type] = "git"
-;projects[ns-blog][download][url] = "git@github.com:nodeone/drupal-ns-blog.git"
-
-;projects[ns-channel][type] = "module"
-;projects[ns-channel][subdir] = "nodestream"
-;projects[ns-channel][download][type] = "git"
-;projects[ns-channel][download][url] = "git@github.com:nodeone/drupal-ns-channel.git"
-
-;projects[ns-core][type] = "module"
-;projects[ns-core][subdir] = "nodestream"
-;projects[ns-core][download][type] = "git"
-;projects[ns-core][download][url] = "git@github.com:nodeone/drupal-ns-core.git"
-
-;projects[ns-imagecache][type] = "module"
-;projects[ns-imagecache][subdir] = "nodestream"
-;projects[ns-imagecache][download][type] = "git"
-;projects[ns-imagecache][download][url] = "git@github.com:nodeone/drupal-ns-imagecache.git"
-
-;projects[ns-layout][type] = "module"
-;projects[ns-layout][subdir] = "nodestream"
-;projects[ns-layout][download][type] = "git"
-;projects[ns-layout][download][url] = "git@github.com:nodeone/drupal-ns-layout.git"
-
-;projects[ns-test][type] = "module"
-;projects[ns-test][subdir] = "nodestream"
-;projects[ns-test][download][type] = "git"
-;projects[ns-test][download][url] = "git@github.com:nodeone/drupal-ns-test.git"
-
-;projects[ns-ui][type] = "module"
-;projects[ns-ui][subdir] = "nodestream"
-;projects[ns-ui][download][type] = "git"
-;projects[ns-ui][download][url] = "git@github.com:nodeone/drupal-ns-ui.git"
-
 ; Developer
 
 projects[devel][subdir] = "developer"

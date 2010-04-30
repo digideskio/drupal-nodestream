@@ -107,6 +107,7 @@ function nodestream_profile_modules() {
     'ns_core',
     'ns_imagecache',
     'ns_layout',
+    'ns_openlayers',
     'ns_test',
     'ns_ui',
   );
