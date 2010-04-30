@@ -39,6 +39,7 @@ function nodestream_profile_modules() {
     // Contrib.
     'admin',
     'admin_theme',
+    'adminrole',
     'content',
     'content_taxonomy',
     'content_taxonomy_autocomplete',
@@ -278,6 +279,9 @@ function nodestream_profile_tasks(&$task, $url) {
 
   // Create an admin role.
   db_query("INSERT INTO {role} (rid, name) VALUES (3, 'admin'), (4, 'editor')");
+
+  // Set 'admin' as the admin role.
+  variable_set('user_admin_role', 3);
 
   // Add user 1 to the admin role.
   db_query("INSERT INTO {users_roles} VALUES (1, 3)");
