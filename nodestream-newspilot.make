@@ -18,6 +18,9 @@ projects[admin][version] = "2.0-beta2"
 projects[admin_theme][subdir] = "contrib"
 projects[admin_theme][version] = "1.3"
 
+projects[adminrole][subdir] = "contrib"
+projects[adminrole][version] = "1.2"
+
 projects[autodeploy][subdir] = "contrib"
 projects[autodeploy][version] = "1.0-beta2"
 
