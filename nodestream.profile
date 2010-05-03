@@ -186,6 +186,19 @@ function nodestream_profile_tasks(&$task, $url) {
         'ns_post' => TRUE,
       ),
     ),
+    array(
+      'name' => 'Bar',
+      'relations' => TRUE,
+      'hierarchy' => FALSE,
+      'multiple' => TRUE,
+      'required' => FALSE,
+      'tags' => TRUE,
+      'module' => 'taxonomy',
+      'weight' => -6,
+      'nodes' => array(
+        'ns_article' => TRUE,
+      ),
+    ),
   );
 
   // Save the vocabularies.
