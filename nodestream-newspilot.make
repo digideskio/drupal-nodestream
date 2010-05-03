@@ -30,6 +30,9 @@ projects[content_taxonomy][version] = "1.0-rc2"
 projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.3"
 
+projects[date][subdir] = "contrib"
+projects[date][version] = "2.4"
+
 projects[diff][subdir] = "contrib"
 projects[diff][version] = "2.0"
 
