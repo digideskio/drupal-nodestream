@@ -26,7 +26,7 @@ git clone git@github.com:nodeone/drupal-ns-imagecache.git "$MODULE_PATH/ns_image
 
 git clone git@github.com:nodeone/drupal-ns-layout.git "$MODULE_PATH/ns_layout"
 
-git clone git@github.com:nodeone/drupal-ns-layout.git "$MODULE_PATH/ns_openlayers"
+git clone git@github.com:nodeone/drupal-ns-openlayers.git "$MODULE_PATH/ns_openlayers"
 
 git clone git@github.com:nodeone/drupal-ns-test.git "$MODULE_PATH/ns_test"
 
