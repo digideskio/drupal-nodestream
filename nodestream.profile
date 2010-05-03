@@ -33,6 +33,7 @@ function nodestream_profile_modules() {
     'help',
     'menu',
     'path',
+    'php',
     'taxonomy',
     'update',
 
@@ -46,6 +47,7 @@ function nodestream_profile_modules() {
     'ctools',
     'date',
     'date_api',
+    'date_popup',
     'date_timezone',
     'devel',
     'diff',
