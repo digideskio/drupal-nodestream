@@ -4,6 +4,10 @@
 
 core = "6.x"
 
+; API version
+
+api = 2
+
 ; Stable modules
 
 projects[admin][version] = "2.0"
