@@ -45,9 +45,10 @@ projects[wysiwyg][version] = "2.1"
 ; Unstable modules
 
 ; Parallell development with this profile.
-projects[crossclone][download][type] = "cvs"
-projects[crossclone][download][module] = "contributions/modules/crossclone"
-projects[crossclone][download][revision] = "DRUPAL-6--1"
+projects[crossclone][type] = module
+projects[crossclone][download][type] = git
+projects[crossclone][download][url] = git@github.com:nodeone/drupal-crossclone.git
+projects[crossclone][download][branch] = master
 
 ; Parallell development with this profile.
 projects[dynamic_formatters][download][type] = "cvs"
@@ -60,9 +61,10 @@ projects[menu_block][download][module] = "contributions/modules/menu_block"
 projects[menu_block][download][revision] = "DRUPAL-6--2:2010-09-08"
 
 ; Parallell development with this profile.
-projects[ns_core][download][type] = "cvs"
-projects[ns_core][download][module] = "contributions/modules/ns_core"
-projects[ns_core][download][revision] = "DRUPAL-6--1"
+projects[ns_core][type] = module
+projects[ns_core][download][type] = git
+projects[ns_core][download][url] = git@github.com:nodeone/drupal-ns_core.git
+projects[ns_core][download][branch] = master
 
 ; Required for bug fixes.
 projects[translation_management][download][type] = "cvs"
@@ -81,14 +83,16 @@ projects[seven][version] = "1.0-beta13"
 ; Unstable themes
 
 ; Parallell development with this profile.
-projects[ns_theme][download][type] = "cvs"
-projects[ns_theme][download][module] = "contributions/themes/ns_theme"
-projects[ns_theme][download][revision] = "DRUPAL-6--1"
+projects[ns_theme][type] = theme
+projects[ns_theme][download][type] = git
+projects[ns_theme][download][url] = git@github.com:nodeone/drupal-ns_theme.git
+projects[ns_theme][download][branch] = master
 
 ; Parallell development with this profile.
-projects[precision][download][type] = "cvs"
-projects[precision][download][module] = "contributions/themes/precision"
-projects[precision][download][revision] = "DRUPAL-6--1"
+projects[precision][type] = theme
+projects[precision][download][type] = git
+projects[precision][download][url] = git@github.com:nodeone/drupal-precision.git
+projects[precision][download][branch] = master
 
 ; Libraries
 
