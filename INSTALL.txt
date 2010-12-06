@@ -1,0 +1,54 @@
+; $Id: INSTALL.txt,v 1.1.2.2 2010/09/28 07:48:15 dixon Exp $
+
+REQUIREMENTS
+------------
+
+NodeStream is distributed with one .make file and one .profile file. The
+.make file defines what packages that must be downloaded and the .profile file
+is responsible for configuring all those modules.
+
+To run this .make file you need two things:
+
+ * Drush (http://drupal.org/project/drush)
+ * Drush Make (http://drupal.org/project/drush_make)
+
+For instructions on how to install those packages, please consult their
+respective documentation.
+
+INSTALLATION
+------------
+
+1. DOWNLOAD NODESTREAM
+
+   Currently NodeStream can only be fetched directly from the CVS repository.
+   This is because of incompatibility with the packaging system on drupal.org.
+   To fetch NodeStream from CVS follow the instructions on this page:
+
+   http://drupal.org/node/891490/cvs-instructions
+
+   Fetching NodeStream from CVS will create a directory containing only the
+   .make file, the .profile file and some include files. In the following
+   examples we assume this drectory is called nodestream/.
+
+2. MOVE NODESTREAM INTO THE PROFILE FOLDER IN YOUR WEBROOT
+
+   First we need to create a folder called profiles/ inside your web root and
+   and move the nodestream/ folder there. In this example we assume your have an
+   empty web root folder located at /var/www/html/.
+
+     mkdir /var/www/html/profiles
+     mv nodestream /var/www/html/profiles
+
+3. RUN THE MAKE FILE TO DOWNLOAD ALL REQUIRED PACKAGES
+
+   To run the .make file you must be located at the web root. Run the following
+   commands:
+
+     cd /var/www/html
+     drush make profiles/nodestream/nodestream.make
+
+4. CONTINUE INSTALLING NODESTREAM AS A REGULAR DRUPAL SITE
+
+   From now on, the steps to get your site up and running is the same as with a
+   regular Drupal site. Please consult the Drupal installation instructions from
+   step 2 in /var/www/html/INSTALL.txt

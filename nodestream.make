@@ -1,177 +1,112 @@
-; $Id$
+; $Id: nodestream.make,v 1.1.2.41 2010/11/19 02:38:28 dixon Exp $
 
-core = 6.x
+; Core
 
-; Pressflow
+core = "6.x"
 
-projects[pressflow][type] = "core"
-projects[pressflow][download][type] = "get"
-projects[pressflow][download][url] = "http://launchpad.net/pressflow/6.x/6.16.77/+download/pressflow-6.16.77.tar.gz"
-; http://drupal.org/node/265973
-projects[pressflow][patch][] = "http://drupal.org/files/issues/xmlrpc_33.patch"
+; Stable modules
 
-; Contrib
-
-projects[admin][subdir] = "contrib"
-projects[admin][version] = "2.0-beta2"
-
-projects[admin_theme][subdir] = "contrib"
-projects[admin_theme][version] = "1.3"
-
-projects[cck][subdir] = "contrib"
-projects[cck][version] = "2.6"
-
-projects[content_taxonomy][subdir] = "contrib"
-projects[content_taxonomy][version] = "1.0-rc2"
-
-projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.3"
-
-projects[date][subdir] = "contrib"
-projects[date][version] = "2.4"
-
-projects[diff][subdir] = "contrib"
-projects[diff][version] = "2.0"
-
-projects[draggableviews][subdir] = "contrib"
-projects[draggableviews][version] = "3.4"
-
-projects[email][subdir] = "contrib"
-projects[email][version] = "1.2"
-
-projects[emfield][subdir] = "contrib"
-projects[emfield][version] = "1.19"
-
-projects[features][subdir] = "contrib"
-projects[features][version] = "1.0-beta6"
-
-projects[filefield][subdir] = "contrib"
-projects[filefield][version] = "3.2"
-
-projects[flag][subdir] = "contrib"
-projects[flag][version] = "2.0-beta2"
-
-projects[flag_note][type] = "module"
-projects[flag_note][subdir] = "contrib"
-projects[flag_note][download][type] = "cvs"
-projects[flag_note][download][module] = "contributions/modules/flag_note"
-projects[flag_note][download][revision] = "DRUPAL-6--2:2010-04-15"
-
-projects[imageapi][subdir] = "contrib"
-projects[imageapi][version] = "1.6"
-
-projects[imagecache][subdir] = "contrib"
+projects[admin][version] = "2.0"
+projects[cck][version] = "2.8"
+projects[ctools][version] = "1.8"
+projects[disqus][version] = "1.6"
+projects[draggableviews][version] = "3.5"
+projects[emfield][version] = "1.25"
+projects[fb_social][version] = "1.0-beta4"
+projects[features][version] = "1.0"
+projects[filefield][version] = "3.7"
+projects[geotaxonomy][version] = "2.0-beta3"
+projects[i18n][version] = "1.7"
+projects[imageapi][version] = "1.9"
 projects[imagecache][version] = "2.0-beta10"
+projects[imagefield][version] = "3.7"
+projects[jquery_ui][version] = "1.4"
+projects[jquery_update][version] = "2.0-alpha1"
+projects[modalframe][version] = "1.7"
+projects[noderelationships][version] = "1.6"
+projects[openlayers][version] = "2.0-alpha10"
+projects[panels][version] = "3.8"
+projects[panels_everywhere][version] = "1.1"
+projects[rules][version] = "1.3"
+projects[scheduler][version] = "1.7"
+projects[semanticviews][version] = "1.1"
+projects[strongarm][version] = "2.0"
+projects[token][version] = "1.15"
+projects[twitter][version] = "2.6"
+projects[views_rss][version] = "1.0-beta5"
+projects[views_slideshow][version] = "2.3"
+projects[webform][version] = "3.4"
+projects[wysiwyg][version] = "2.1"
 
-projects[imagefield][subdir] = "contrib"
-projects[imagefield][version] = "3.2"
+; Unstable modules
 
-projects[jquery_ui][subdir] = "contrib"
-projects[jquery_ui][version] = "1.3"
+; Parallell development with this profile.
+projects[crossclone][download][type] = "cvs"
+projects[crossclone][download][module] = "contributions/modules/crossclone"
+projects[crossclone][download][revision] = "DRUPAL-6--1"
 
-projects[jquery_update][subdir] = "contrib"
-projects[jquery_update][version] = "1.1"
+; Parallell development with this profile.
+projects[dynamic_formatters][download][type] = "cvs"
+projects[dynamic_formatters][download][module] = "contributions/modules/dynamic_formatters"
+projects[dynamic_formatters][download][revision] = "DRUPAL-6--1-0-ALPHA3"
 
-projects[modalframe][subdir] = "contrib"
-projects[modalframe][version] = "1.6"
+; Need dev for various features.
+projects[menu_block][download][type] = "cvs"
+projects[menu_block][download][module] = "contributions/modules/menu_block"
+projects[menu_block][download][revision] = "DRUPAL-6--2:2010-09-08"
 
-projects[noderelationships][subdir] = "contrib"
-projects[noderelationships][version] = "1.5"
+; Parallell development with this profile.
+projects[ns_core][download][type] = "cvs"
+projects[ns_core][download][module] = "contributions/modules/ns_core"
+projects[ns_core][download][revision] = "DRUPAL-6--1"
 
-projects[openlayers][subdir] = "contrib"
-projects[openlayers][version] = "1.0-rc1"
+; Required for bug fixes.
+projects[translation_management][download][type] = "cvs"
+projects[translation_management][download][module] = "contributions/modules/translation_management"
+projects[translation_management][download][revision] = "DRUPAL-6--1:2010-11-18"
 
-projects[panels][subdir] = "contrib"
-projects[panels][version] = "3.3"
+; Required for pluggable backend.
+projects[views][download][type] = "cvs"
+projects[views][download][module] = "contributions/modules/views"
+projects[views][download][revision] = "DRUPAL-6--3:2010-09-03"
 
-projects[panels_everywhere][subdir] = "contrib"
-projects[panels_everywhere][version] = "1.0"
+; Stable themes
 
-projects[pathauto][subdir] = "contrib"
-projects[pathauto][version] = "1.3"
+projects[seven][version] = "1.0-beta13"
 
-projects[pollfield][subdir] = "contrib"
-projects[pollfield][version] = "1.11-beta1"
+; Unstable themes
 
-projects[print][subdir] = "contrib"
-projects[print][version] = "1.10"
+; Parallell development with this profile.
+projects[ns_theme][download][type] = "cvs"
+projects[ns_theme][download][module] = "contributions/themes/ns_theme"
+projects[ns_theme][download][revision] = "DRUPAL-6--1"
 
-projects[revision_moderation][subdir] = "contrib"
-projects[revision_moderation][version] = "1.0-alpha2"
-
-projects[rules][subdir] = "contrib"
-projects[rules][version] = "1.2"
-
-projects[session_api][subdir] = "contrib"
-projects[session_api][version] = "1.2"
-
-projects[strongarm][subdir] = "contrib"
-projects[strongarm][version] = "2.0-rc1"
-
-projects[tablefield][subdir] = "contrib"
-projects[tablefield][version] = "1.0"
-
-projects[token][subdir] = "contrib"
-projects[token][version] = "1.12"
-
-projects[vertical_tabs][subdir] = "contrib"
-projects[vertical_tabs][version] = "1.0-rc1"
-
-projects[views][subdir] = "contrib"
-projects[views][version] = "2.10"
-
-projects[views_bulk_operations][subdir] = "contrib"
-projects[views_bulk_operations][version] = "1.9"
-
-projects[views_customfield][subdir] = "contrib"
-projects[views_customfield][version] = "1.0"
-
-projects[views_slideshow][subdir] = "contrib"
-projects[views_slideshow][version] = "2.0-beta4"
-
-projects[webform][subdir] = "contrib"
-projects[webform][version] = "3.0-beta4"
-
-; Patched
-
-projects[semanticviews][type] = "module"
-projects[semanticviews][subdir] = "contrib"
-projects[semanticviews][download][type] = "cvs"
-projects[semanticviews][download][module] = "contributions/modules/semanticviews"
-projects[semanticviews][download][revision] = "DRUPAL-6--1:2010-04-05"
-; http://drupal.org/node/749666
-projects[semanticviews][patch][] = "http://github.com/downloads/nodeone/drupal-precision/semanticviews-translation-and-comma-separation.patch"
-
-; Custom
-
-projects[imagecachereference][type] = "module"
-projects[imagecachereference][subdir] = "custom"
-projects[imagecachereference][download][type] = "git"
-projects[imagecachereference][download][url] = "git@github.com:nodeone/drupal-imagecachereference.git"
-
-; Developer
-
-projects[devel][subdir] = "developer"
-projects[devel][version] = "1.18"
-
-projects[simpletest][subdir] = "developer"
-projects[simpletest][version] = "2.10"
-
-; Themes
-
-; See ./scripts/clone-private-repos.sh
-
-;projects[ns-theme][type] = "theme"
-;projects[ns-theme][download][type] = "git"
-;projects[ns-theme][download][url] = "git@github.com:nodeone/drupal-ns-theme.git"
-
-projects[precision][type] = "theme"
-projects[precision][download][type] = "git"
-projects[precision][download][url] = "git@github.com:nodeone/drupal-precision.git"
+; Parallell development with this profile.
+projects[precision][download][type] = "cvs"
+projects[precision][download][module] = "contributions/themes/precision"
+projects[precision][download][revision] = "DRUPAL-6--1"
 
 ; Libraries
 
 libraries[jquery_ui][download][type] = "get"
-libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip"
+libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery-ui-1.7.3.zip"
+libraries[jquery_ui][destination] = "modules/jquery_ui"
 libraries[jquery_ui][directory_name] = "jquery.ui"
-libraries[jquery_ui][destination] = "modules/contrib/jquery_ui"
+
+libraries[ckeditor][download][type] = "get"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.4/ckeditor_3.4.tar.gz"
+libraries[ckeditor][destination] = "libraries"
+
+libraries[profiler][download][type] = "get"
+libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profiler-6.x-2.0-beta1.tar.gz"
+
+; Patches
+
+; http://drupal.org/node/885412
+projects[disqus][patch][] = "http://drupal.org/files/issues/disqus-views-relationships.patch"
+
+; http://drupal.org/node/906106
+libraries[profiler][patch][] = "http://drupal.org/files/issues/profiler.906106-11.patch"
+
+; http://drupal.org/node/954996
+libraries[profiler][patch][] = "http://drupal.org/files/issues/954996-profiler-trigger-faux-exportables-5.patch"

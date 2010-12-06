@@ -1,0 +1,202 @@
+<?php
+// $Id: nodestream.install,v 1.1.2.3 2010/11/14 13:27:33 dixon Exp $
+
+/**
+ * Implementation of hook_install().
+ */
+function nodestream_install() {
+  // Delete the default webform content type.
+  node_type_delete('webform');
+
+  // Remove all example rules and rule sets.
+  db_query('TRUNCATE {rules_rules}');
+  db_query('TRUNCATE {rules_sets}');
+
+  // Configure NodeRelationships.
+  module_load_include('inc', 'noderelationships', 'noderelationships');
+  noderelationships_settings_save(
+    'ns_article',
+    array(
+      'noderef' => array(
+        'search_and_reference_view' => array(
+          'field_ns_article_attachment' => 'noderelationships_noderef:page_grid',
+          'field_ns_article_byline' => 'noderelationships_noderef:page_grid',
+          'field_ns_article_image' => 'noderelationships_noderef:page_grid',
+        ),
+        'create_and_reference' => array(
+          'field_ns_article_attachment' => 'field_ns_article_attachment',
+          'field_ns_article_byline' => 'field_ns_article_byline',
+          'field_ns_article_image' => 'field_ns_article_image',
+        ),
+        'edit_reference' => array(
+          'field_ns_article_attachment' => 'field_ns_article_attachment',
+          'field_ns_article_byline' => 'field_ns_article_byline',
+          'field_ns_article_image' => 'field_ns_article_image',
+        ),
+      ),
+    )
+  );
+  noderelationships_settings_save(
+    'ns_blog',
+    array(
+      'noderef' => array(
+        'search_and_reference_view' => array(
+          'field_ns_blog_blogger' => 'noderelationships_noderef:page_grid',
+        ),
+        'create_and_reference' => array(
+          'field_ns_blog_blogger' => 'field_ns_blog_blogger',
+        ),
+        'edit_reference' => array(
+          'field_ns_blog_blogger' => 'field_ns_blog_blogger',
+        ),
+      ),
+    )
+  );
+  noderelationships_settings_save(
+    'ns_image',
+    array(
+      'noderef' => array(
+        'search_and_reference_view' => array(
+          'field_ns_image_credit' => 'noderelationships_noderef:page_grid',
+        ),
+        'create_and_reference' => array(
+          'field_ns_image_credit' => 'field_ns_image_credit',
+        ),
+        'edit_reference' => array(
+          'field_ns_image_credit' => 'field_ns_image_credit',
+        ),
+      ),
+    )
+  );
+  noderelationships_settings_save(
+    'ns_post',
+    array(
+      'noderef' => array(
+        'search_and_reference_view' => array(
+          'field_ns_post_blog' => 'noderelationships_noderef:page_grid',
+          'field_ns_post_blogger' => 'noderelationships_noderef:page_grid',
+        ),
+        'create_and_reference' => array(
+          'field_ns_post_blog' => 'field_ns_post_blog',
+          'field_ns_post_blogger' => 'field_ns_post_blogger',
+        ),
+        'edit_reference' => array(
+          'field_ns_post_blog' => 'field_ns_post_blog',
+          'field_ns_post_blogger' => 'field_ns_post_blogger',
+        ),
+      ),
+    )
+  );
+  noderelationships_settings_save(
+    'ns_promo',
+    array(
+      'noderef' => array(
+        'search_and_reference_view' => array(
+          'field_ns_promo_article' => 'noderelationships_noderef:page_grid',
+          'field_ns_promo_image' => 'noderelationships_noderef:page_grid',
+          'field_ns_promo_parent' => 'noderelationships_noderef:page_grid',
+        ),
+        'create_and_reference' => array(
+          'field_ns_promo_article' => 'field_ns_promo_article',
+          'field_ns_promo_image' => 'field_ns_promo_image',
+          'field_ns_promo_parent' => 'field_ns_promo_parent',
+        ),
+        'edit_reference' => array(
+          'field_ns_promo_article' => 'field_ns_promo_article',
+          'field_ns_promo_image' => 'field_ns_promo_image',
+          'field_ns_promo_parent' => 'field_ns_promo_parent',
+        ),
+      ),
+    )
+  );
+  noderelationships_settings_save(
+    'ns_video',
+    array(
+      'noderef' => array(
+        'search_and_reference_view' => array(
+          'field_ns_video_credit' => 'noderelationships_noderef:page_grid',
+        ),
+        'create_and_reference' => array(
+          'field_ns_video_credit' => 'field_ns_video_credit',
+        ),
+        'edit_reference' => array(
+          'field_ns_video_credit' => 'field_ns_video_credit',
+        ),
+      ),
+    )
+  );
+
+  // Configure input format settings.
+  $query = 'UPDATE {filter_formats} SET name = "%s", roles = "%s" WHERE format = %d';
+  db_query($query, t('Plain text'), ',1,2,3,4,5,', 1);
+  db_query($query, t('HTML editor'), ',3,4,5,', 2);
+
+  // Configure input format filters.
+  db_query('TRUNCATE {filters}');
+  $query = 'INSERT INTO {filters} (format, module, delta, weight) VALUES (%d, "filter", %d, %d)';
+  db_query($query, 1, 0, -8);
+  db_query($query, 1, 1, -10);
+  db_query($query, 1, 2, -9);
+  db_query($query, 1, 3, -7);
+  db_query($query, 2, 0, -10);
+  db_query($query, 2, 3, -9);
+
+  // Configure WYSIWYG.
+  $settings = array (
+    'default' => 1,
+    'user_choose' => 0,
+    'show_toggle' => 1,
+    'theme' => 'advanced',
+    'language' => 'en',
+    'buttons' => array (
+      'default' => array (
+        'Bold' => 1,
+        'Italic' => 1,
+        'BulletedList' => 1,
+        'NumberedList' => 1,
+        'Undo' => 1,
+        'Redo' => 1,
+        'Link' => 1,
+        'Unlink' => 1,
+        'Superscript' => 1,
+        'Subscript' => 1,
+        'Blockquote' => 1,
+        'Cut' => 1,
+        'Copy' => 1,
+        'Paste' => 1,
+        'PasteFromWord' => 1,
+        'ShowBlocks' => 1,
+        'RemoveFormat' => 1,
+        'SpecialChar' => 1,
+        'Format' => 1,
+        'Find' => 1,
+        'Replace' => 1,
+        'Maximize' => 1,
+        'SpellChecker' => 1,
+      ),
+    ),
+    'toolbar_loc' => 'top',
+    'toolbar_align' => 'left',
+    'path_loc' => 'bottom',
+    'resizing' => 1,
+    'verify_html' => 0,
+    'preformatted' => 0,
+    'convert_fonts_to_spans' => 0,
+    'remove_linebreaks' => 0,
+    'apply_source_formatting' => 0,
+    'paste_auto_cleanup_on_paste' => 0,
+    'block_formats' => 'p,h2,h3,h4,h5,h6',
+    'css_setting' => 'none',
+    'css_path' => '',
+    'css_classes' => '',
+  );
+  $query = 'INSERT INTO {wysiwyg} (format, editor, settings) VALUES (%d, "%s", "%s")';
+  db_query($query, 1, '', '');
+  db_query($query, 2, 'ckeditor', serialize($settings));
+
+  // Revert feature components that are overridden by others on install.
+  $revert = array(
+    'ns_defaults' => array('variable'),
+  );
+  features_revert($revert);
+}
