@@ -87,6 +87,7 @@ dependencies[] = "ns_fact"
 dependencies[] = "ns_image"
 dependencies[] = "ns_layout"
 dependencies[] = "ns_page"
+dependencies[] = "ns_translation_ref"
 
 ; Topic terms
 
