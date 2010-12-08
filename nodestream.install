@@ -8,10 +8,19 @@ function nodestream_install() {
   // Delete the default webform content type.
   node_type_delete('webform');
 
-  // Remove all example rules and rule sets.
-  db_query('TRUNCATE {rules_rules}');
-  db_query('TRUNCATE {rules_sets}');
+  nodestream_install_clear_rules();
+  nodestream_install_configure_input_formats();
+  nodestream_install_configure_filters();
+  nodestream_install_noderelationships();
 
+  // Revert feature components that are overridden by others on install.
+  $revert = array(
+    'ns_defaults' => array('variable'),
+  );
+  features_revert($revert);
+}
+
+function nodestream_install_noderelationships() {
   // Configure NodeRelationships.
   module_load_include('inc', 'noderelationships', 'noderelationships');
   noderelationships_settings_save(
@@ -125,13 +134,29 @@ function nodestream_install() {
       ),
     )
   );
+}
 
-  // Configure input format settings.
+/**
+ * Remove all example rules and rule sets.
+ */
+function nodestream_install_clear_rules() {
+  db_query('TRUNCATE {rules_rules}');
+  db_query('TRUNCATE {rules_sets}');
+}
+
+/**
+ * Configure input format settings.
+ */
+function nodestream_install_configure_input_formats() {
   $query = 'UPDATE {filter_formats} SET name = "%s", roles = "%s" WHERE format = %d';
   db_query($query, t('Plain text'), ',1,2,3,4,5,', 1);
   db_query($query, t('HTML editor'), ',3,4,5,', 2);
+}
 
-  // Configure input format filters.
+/**
+ * Configure input format filters.
+ */
+function nodestream_install_configure_filters() {
   db_query('TRUNCATE {filters}');
   $query = 'INSERT INTO {filters} (format, module, delta, weight) VALUES (%d, "filter", %d, %d)';
   db_query($query, 1, 0, -8);
@@ -140,7 +165,12 @@ function nodestream_install() {
   db_query($query, 1, 3, -7);
   db_query($query, 2, 0, -10);
   db_query($query, 2, 3, -9);
+}
 
+/**
+ * Configure wysiwyg.
+ */
+function nodestream_install_wysiwyg() {
   // Configure WYSIWYG.
   $settings = array (
     'default' => 1,
@@ -193,10 +223,4 @@ function nodestream_install() {
   $query = 'INSERT INTO {wysiwyg} (format, editor, settings) VALUES (%d, "%s", "%s")';
   db_query($query, 1, '', '');
   db_query($query, 2, 'ckeditor', serialize($settings));
-
-  // Revert feature components that are overridden by others on install.
-  $revert = array(
-    'ns_defaults' => array('variable'),
-  );
-  features_revert($revert);
 }
