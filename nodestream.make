@@ -41,6 +41,7 @@ projects[views_rss][version] = "1.0-beta5"
 projects[views_slideshow][version] = "2.3"
 projects[webform][version] = "3.4"
 projects[wysiwyg][version] = "2.1"
+projects[simpletest][version] = "2.11"
 
 ; Unstable modules
 
