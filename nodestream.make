@@ -75,7 +75,7 @@ projects[translation_management][download][revision] = "DRUPAL-6--1:2010-11-18"
 ; Required for pluggable backend.
 projects[views][download][type] = "cvs"
 projects[views][download][module] = "contributions/modules/views"
-projects[views][download][revision] = "DRUPAL-6--3:2010-09-03"
+projects[views][download][revision] = "DRUPAL-6--3:2010-12-01"
 
 ; Stable themes
 
