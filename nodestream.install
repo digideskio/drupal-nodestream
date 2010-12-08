@@ -18,6 +18,10 @@ function nodestream_install() {
     'ns_defaults' => array('variable'),
   );
   features_revert($revert);
+
+  // We need to make sure that the language negotiation variable is actually set
+  // in the database since it is being used before hook_init() is invoked.
+  variable_set('language_negotiation', LANGUAGE_NEGOTIATION_PATH_DEFAULT);
 }
 
 function nodestream_install_noderelationships() {
