@@ -58,7 +58,7 @@ projects[dynamic_formatters][download][revision] = "DRUPAL-6--1-0-ALPHA3"
 ; Need dev for various features.
 projects[menu_block][download][type] = "cvs"
 projects[menu_block][download][module] = "contributions/modules/menu_block"
-projects[menu_block][download][revision] = "DRUPAL-6--2:2010-09-08"
+projects[menu_block][download][revision] = "DRUPAL-6--2:2010-12-07"
 
 ; Parallell development with this profile.
 projects[ns_core][type] = module
