@@ -32,7 +32,7 @@ function nodestream_install_noderelationships() {
     array(
       'noderef' => array(
         'search_and_reference_view' => array(
-          'field_ns_article_attachment' => 'noderelationships_noderef:page_grid',
+          'field_ns_article_attachment' => 'ns_article_noderef:page_grid',
           'field_ns_article_byline' => 'noderelationships_noderef:page_grid',
           'field_ns_article_image' => 'noderelationships_noderef:page_grid',
         ),
