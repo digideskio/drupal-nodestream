@@ -11,6 +11,7 @@ function nodestream_install() {
   nodestream_install_clear_rules();
   nodestream_install_configure_input_formats();
   nodestream_install_configure_filters();
+  nodestream_install_wysiwyg();
   nodestream_install_noderelationships();
 
   // Revert feature components that are overridden by others on install.
