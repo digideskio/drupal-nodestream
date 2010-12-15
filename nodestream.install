@@ -165,7 +165,7 @@ function nodestream_install_clear_rules() {
 function nodestream_install_configure_input_formats() {
   $query = 'UPDATE {filter_formats} SET name = "%s", roles = "%s" WHERE format = %d';
   db_query($query, t('Plain text'), ',1,2,3,4,5,', 1);
-  db_query($query, t('HTML editor'), ',3,4,5,6,7,8,', 2);
+  db_query($query, t('HTML editor'), ',3,4,5,6,7,8,9,', 2);
 }
 
 /**
