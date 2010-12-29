@@ -77,6 +77,11 @@ projects[views][download][type] = "cvs"
 projects[views][download][module] = "contributions/modules/views"
 projects[views][download][revision] = "DRUPAL-6--3:2010-12-01"
 
+; Kind of Parallell development with the profile.
+projects[cache_actions][download][type] = "cvs"
+projects[cache_actions][download][module] = "contributions/modules/cache_actions"
+projects[cache_actions][download][revision] = "DRUPAL-6--2"
+
 ; Stable themes
 
 projects[seven][version] = "1.0-beta13"
@@ -119,3 +124,6 @@ libraries[profiler][patch][] = "http://drupal.org/files/issues/profiler.906106-1
 
 ; http://drupal.org/node/954996
 libraries[profiler][patch][] = "http://drupal.org/files/issues/954996-profiler-trigger-faux-exportables-5.patch"
+
+; http://drupal.org/node/1009646
+libraries[views][patch][] = "http://drupal.org/files/issues/views-dont-use-tokens-with-node-links.patch"
