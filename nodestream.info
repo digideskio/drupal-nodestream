@@ -55,7 +55,6 @@ dependencies[] = "views_content"
 dependencies[] = "views_rss"
 dependencies[] = "views_slideshow"
 dependencies[] = "views_slideshow_singleframe"
-dependencies[] = "webform"
 dependencies[] = "wysiwyg"
 
 ; NodeStream
