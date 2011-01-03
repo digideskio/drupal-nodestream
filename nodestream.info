@@ -23,10 +23,6 @@ dependencies[] = "draggableviews"
 dependencies[] = "dynamic_emfield"
 dependencies[] = "dynamic_filefield"
 dependencies[] = "dynamic_formatters"
-dependencies[] = "emfield"
-dependencies[] = "emimage"
-dependencies[] = "emvideo"
-dependencies[] = "emthumb"
 dependencies[] = "features"
 dependencies[] = "filefield"
 dependencies[] = "imageapi"
@@ -56,6 +52,7 @@ dependencies[] = "views_rss"
 dependencies[] = "views_slideshow"
 dependencies[] = "views_slideshow_singleframe"
 dependencies[] = "wysiwyg"
+dependencies[] = "cache_actions"
 
 ; NodeStream
 
