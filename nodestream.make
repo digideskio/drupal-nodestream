@@ -129,4 +129,4 @@ libraries[profiler][patch][] = "http://drupal.org/files/issues/954996-profiler-t
 libraries[profiler][patch][] = "http://drupal.org/files/issues/profiler-install-files.patch"
 
 ; http://drupal.org/node/1009646
-libraries[views][patch][] = "http://drupal.org/files/issues/views-dont-use-tokens-with-node-links.patch"
+projects[views][patch][] = "http://drupal.org/files/issues/views-dont-use-tokens-with-node-links.patch"
