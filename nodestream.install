@@ -96,7 +96,7 @@ function nodestream_install_noderelationships() {
     )
   );
   noderelationships_settings_save(
-    'ns_post',
+    'ns_blog_post',
     array(
       'noderef' => array(
         'search_and_reference_view' => array(
