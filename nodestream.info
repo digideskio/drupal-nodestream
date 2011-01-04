@@ -89,5 +89,5 @@ terms[main_3][weight] = "-8"
 terms[main_3][parent][] = "2"
 
 terms[aside][name] = "Aside"
-terms[aside][vocab_module] = "features_promo_ns_topic_region"
+terms[aside][vocab_module] = "features_ns_promo_topic_region"
 terms[aside][weight] = "-7"
