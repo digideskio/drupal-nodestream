@@ -100,16 +100,19 @@ function nodestream_install_noderelationships() {
     array(
       'noderef' => array(
         'search_and_reference_view' => array(
-          'field_ns_post_blog' => 'noderelationships_noderef:page_grid',
-          'field_ns_post_blogger' => 'noderelationships_noderef:page_grid',
+          'field_ns_blog_post_blog' => 'noderelationships_noderef:page_grid',
+          'field_ns_blog_post_blogger' => 'noderelationships_noderef:page_grid',
+          'field_ns_blog_post_image' => 'noderelationships_noderef:page_grid',
         ),
         'create_and_reference' => array(
-          'field_ns_post_blog' => 'field_ns_post_blog',
-          'field_ns_post_blogger' => 'field_ns_post_blogger',
+          'field_ns_blog_post_blog' => 'field_ns_blog_post_blog',
+          'field_ns_blog_post_blogger' => 'field_ns_blog_post_blogger',
+          'field_ns_blog_post_image' => 'field_ns_blog_post_image'
         ),
         'edit_reference' => array(
-          'field_ns_post_blog' => 'field_ns_post_blog',
-          'field_ns_post_blogger' => 'field_ns_post_blogger',
+          'field_ns_blog_post_blog' => 'field_ns_blog_post_blog',
+          'field_ns_blog_post_blogger' => 'field_ns_blog_post_blogger',
+          'field_ns_blog_post_image' => 'field_ns_blog_post_image'
         ),
       ),
     )
