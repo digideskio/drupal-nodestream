@@ -25,6 +25,9 @@ function nodestream_install() {
   variable_set('language_negotiation', LANGUAGE_NEGOTIATION_PATH_DEFAULT);
 }
 
+/**
+ * Configure NodeRelationships.
+ */
 function nodestream_install_noderelationships() {
   // Configure NodeRelationships.
   module_load_include('inc', 'noderelationships', 'noderelationships');
