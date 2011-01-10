@@ -46,10 +46,9 @@ projects[simpletest][version] = "2.11"
 ; Unstable modules
 
 ; Parallell development with this profile.
-projects[crossclone][type] = module
-projects[crossclone][download][type] = git
-projects[crossclone][download][url] = git@github.com:nodeone/drupal-crossclone.git
-projects[crossclone][download][branch] = master
+projects[crossclone][download][type] = cvs
+projects[crossclone][download][module] = "contributions/modules/crossclone"
+projects[crossclone][download][revision] = "DRUPAL-6--1"
 
 ; Parallell development with this profile.
 projects[dynamic_formatters][download][type] = "cvs"
