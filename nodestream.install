@@ -125,9 +125,9 @@ function nodestream_install_noderelationships() {
     array(
       'noderef' => array(
         'search_and_reference_view' => array(
-          'field_ns_promo_article' => 'noderelationships_noderef:page_grid',
-          'field_ns_promo_image' => 'noderelationships_noderef:page_grid',
-          'field_ns_promo_parent' => 'noderelationships_noderef:page_grid',
+          'field_ns_promo_article' => 'ns_article_noderef:page_grid',
+          'field_ns_promo_image' => 'ns_article_noderef:page_grid',
+          'field_ns_promo_parent' => 'ns_article_noderef:page_grid',
         ),
         'create_and_reference' => array(
           'field_ns_promo_article' => 'field_ns_promo_article',
@@ -147,7 +147,7 @@ function nodestream_install_noderelationships() {
     array(
       'noderef' => array(
         'search_and_reference_view' => array(
-          'field_ns_video_credit' => 'noderelationships_noderef:page_grid',
+          'field_ns_video_credit' => 'ns_article_noderef:page_grid',
         ),
         'create_and_reference' => array(
           'field_ns_video_credit' => 'field_ns_video_credit',
