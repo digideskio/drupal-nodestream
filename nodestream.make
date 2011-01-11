@@ -39,7 +39,7 @@ projects[token][version] = "1.15"
 projects[twitter][version] = "2.6"
 projects[views_rss][version] = "1.0-beta5"
 projects[views_slideshow][version] = "2.3"
-projects[webform][version] = "3.4"
+projects[webform][version] = "3.5"
 projects[wysiwyg][version] = "2.1"
 projects[simpletest][version] = "2.11"
 
