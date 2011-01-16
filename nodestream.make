@@ -11,11 +11,13 @@ api = 2
 ; Stable modules
 
 projects[admin][version] = "2.0"
-projects[cck][version] = "2.8"
+projects[cache_actions] = "2.0-beta1"
+projects[cck][version] = "2.9"
+projects[crossclone][version] = "1.0-alpha1"
 projects[ctools][version] = "1.8"
 projects[disqus][version] = "1.6"
 projects[draggableviews][version] = "3.5"
-projects[emfield][version] = "1.25"
+projects[emfield][version] = "1.26"
 projects[fb_social][version] = "1.0-beta4"
 projects[features][version] = "1.0"
 projects[filefield][version] = "3.9"
@@ -23,32 +25,28 @@ projects[geotaxonomy][version] = "2.0-beta3"
 projects[i18n][version] = "1.7"
 projects[imageapi][version] = "1.9"
 projects[imagecache][version] = "2.0-beta10"
-projects[imagefield][version] = "3.7"
+projects[imagefield][version] = "3.9"
 projects[jquery_ui][version] = "1.4"
 projects[jquery_update][version] = "2.0-alpha1"
 projects[modalframe][version] = "1.7"
 projects[noderelationships][version] = "1.6"
 projects[openlayers][version] = "2.0-alpha10"
-projects[panels][version] = "3.8"
+projects[panels][version] = "3.9"
 projects[panels_everywhere][version] = "1.1"
-projects[rules][version] = "1.3"
-projects[scheduler][version] = "1.7"
+projects[rules][version] = "1.4"
+projects[scheduler][version] = "1.8"
 projects[semanticviews][version] = "1.1"
 projects[strongarm][version] = "2.0"
 projects[token][version] = "1.15"
+projects[translation_management][version] = "1.21"
 projects[twitter][version] = "2.6"
 projects[views_rss][version] = "1.0-beta5"
 projects[views_slideshow][version] = "2.3"
 projects[webform][version] = "3.5"
-projects[wysiwyg][version] = "2.1"
+projects[wysiwyg][version] = "2.2"
 projects[simpletest][version] = "2.11"
 
 ; Unstable modules
-
-; Parallell development with this profile.
-projects[crossclone][download][type] = cvs
-projects[crossclone][download][module] = "contributions/modules/crossclone"
-projects[crossclone][download][revision] = "DRUPAL-6--1"
 
 ; Parallell development with this profile.
 projects[dynamic_formatters][download][type] = "cvs"
@@ -58,7 +56,7 @@ projects[dynamic_formatters][download][revision] = "DRUPAL-6--1-0-ALPHA3"
 ; Need dev for various features.
 projects[menu_block][download][type] = "cvs"
 projects[menu_block][download][module] = "contributions/modules/menu_block"
-projects[menu_block][download][revision] = "DRUPAL-6--2:2010-12-07"
+projects[menu_block][download][revision] = "DRUPAL-6--2:2011-01-15"
 
 ; Parallell development with this profile.
 projects[ns_core][type] = module
@@ -66,20 +64,10 @@ projects[ns_core][download][type] = git
 projects[ns_core][download][url] = git@github.com:nodeone/drupal-ns_core.git
 projects[ns_core][download][branch] = master
 
-; Required for bug fixes.
-projects[translation_management][download][type] = "cvs"
-projects[translation_management][download][module] = "contributions/modules/translation_management"
-projects[translation_management][download][revision] = "DRUPAL-6--1:2010-11-18"
-
 ; Required for pluggable backend.
 projects[views][download][type] = "cvs"
 projects[views][download][module] = "contributions/modules/views"
-projects[views][download][revision] = "DRUPAL-6--3:2010-12-01"
-
-; Kind of Parallell development with the profile.
-projects[cache_actions][download][type] = "cvs"
-projects[cache_actions][download][module] = "contributions/modules/cache_actions"
-projects[cache_actions][download][revision] = "DRUPAL-6--2"
+projects[views][download][revision] = "DRUPAL-6--3:2011-01-15"
 
 ; Stable themes
 
