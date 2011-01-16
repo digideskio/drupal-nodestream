@@ -1,12 +1,12 @@
 ; $Id: nodestream.make,v 1.1.2.41 2010/11/19 02:38:28 dixon Exp $
 
+; API
+
+api = 2
+
 ; Core
 
 core = "6.x"
-
-; API version
-
-api = 2
 
 ; Stable modules
 
@@ -44,7 +44,6 @@ projects[views_rss][version] = "1.0-beta5"
 projects[views_slideshow][version] = "2.3"
 projects[webform][version] = "3.5"
 projects[wysiwyg][version] = "2.2"
-projects[simpletest][version] = "2.11"
 
 ; Unstable modules
 
