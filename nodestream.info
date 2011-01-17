@@ -1,93 +1,93 @@
 ; $Id: nodestream.info,v 1.1.2.7 2010/11/19 02:22:53 dixon Exp $
 
-name = "NodeStream"
-description = "Default installation profile for NodeStream."
-core = "6.x"
-theme = "ns_theme"
+name = NodeStream
+description = Default installation profile for NodeStream.
+core = 6.x
+theme = ns_theme
 
 ; Core
 
-dependencies[] = "dblog"
-dependencies[] = "help"
-dependencies[] = "locale"
-dependencies[] = "menu"
-dependencies[] = "taxonomy"
+dependencies[] = dblog
+dependencies[] = help
+dependencies[] = locale
+dependencies[] = menu
+dependencies[] = taxonomy
 
 ; Contrib
 
-dependencies[] = "admin"
-dependencies[] = "content"
-dependencies[] = "crossclone"
-dependencies[] = "ctools"
-dependencies[] = "draggableviews"
-dependencies[] = "dynamic_filefield"
-dependencies[] = "dynamic_formatters"
-dependencies[] = "features"
-dependencies[] = "filefield"
-dependencies[] = "imageapi"
-dependencies[] = "imageapi_gd"
-dependencies[] = "imagecache"
-dependencies[] = "imagefield"
-dependencies[] = "jquery_ui"
-dependencies[] = "jquery_update"
-dependencies[] = "menu_block"
-dependencies[] = "modalframe"
-dependencies[] = "nodereference"
-dependencies[] = "noderelationships"
-dependencies[] = "optionwidgets"
-dependencies[] = "page_manager"
-dependencies[] = "panels"
-dependencies[] = "panels_everywhere"
-dependencies[] = "panels_mini"
-dependencies[] = "rules"
-dependencies[] = "text"
-dependencies[] = "token"
-dependencies[] = "scheduler"
-dependencies[] = "semanticviews"
-dependencies[] = "strongarm"
-dependencies[] = "views"
-dependencies[] = "views_content"
-dependencies[] = "views_rss"
-dependencies[] = "views_slideshow"
-dependencies[] = "views_slideshow_singleframe"
-dependencies[] = "wysiwyg"
-dependencies[] = "cache_actions"
+dependencies[] = admin
+dependencies[] = content
+dependencies[] = crossclone
+dependencies[] = ctools
+dependencies[] = draggableviews
+dependencies[] = dynamic_filefield
+dependencies[] = dynamic_formatters
+dependencies[] = features
+dependencies[] = filefield
+dependencies[] = imageapi
+dependencies[] = imageapi_gd
+dependencies[] = imagecache
+dependencies[] = imagefield
+dependencies[] = jquery_ui
+dependencies[] = jquery_update
+dependencies[] = menu_block
+dependencies[] = modalframe
+dependencies[] = nodereference
+dependencies[] = noderelationships
+dependencies[] = optionwidgets
+dependencies[] = page_manager
+dependencies[] = panels
+dependencies[] = panels_everywhere
+dependencies[] = panels_mini
+dependencies[] = rules
+dependencies[] = text
+dependencies[] = token
+dependencies[] = scheduler
+dependencies[] = semanticviews
+dependencies[] = strongarm
+dependencies[] = views
+dependencies[] = views_content
+dependencies[] = views_rss
+dependencies[] = views_slideshow
+dependencies[] = views_slideshow_singleframe
+dependencies[] = wysiwyg
+dependencies[] = cache_actions
 
 ; NodeStream
 
-dependencies[] = "ns_article"
-dependencies[] = "ns_promo"
-dependencies[] = "ns_blog"
-dependencies[] = "ns_contributor"
-dependencies[] = "ns_core"
-dependencies[] = "ns_defaults"
-dependencies[] = "ns_fact"
-dependencies[] = "ns_image"
-dependencies[] = "ns_layout"
-dependencies[] = "ns_page"
+dependencies[] = ns_article
+dependencies[] = ns_promo
+dependencies[] = ns_blog
+dependencies[] = ns_contributor
+dependencies[] = ns_core
+dependencies[] = ns_defaults
+dependencies[] = ns_fact
+dependencies[] = ns_image
+dependencies[] = ns_layout
+dependencies[] = ns_page
 
 ; Topic terms
 
-terms[front][name] = "Front page"
-terms[front][vocab_module] = "features_ns_promo_topic"
-terms[front][weight] = "-10"
+terms[front][name] = Front page
+terms[front][vocab_module] = features_ns_promo_topic
+terms[front][weight] = -10
 
 ; Topic region terms
 
-terms[main_1][name] = "Main (1 col)"
-terms[main_1][vocab_module] = "features_ns_promo_topic_region"
-terms[main_1][weight] = "-10"
+terms[main_1][name] = Main (1 col)
+terms[main_1][vocab_module] = features_ns_promo_topic_region
+terms[main_1][weight] = -10
 
-terms[main_2][name] = "Main (2 col)"
-terms[main_2][vocab_module] = "features_ns_promo_topic_region"
-terms[main_2][weight] = "-9"
-terms[main_2][parent][] = "2"
+terms[main_2][name] = Main (2 col)
+terms[main_2][vocab_module] = features_ns_promo_topic_region
+terms[main_2][weight] = -9
+terms[main_2][parent][] = 2
 
-terms[main_3][name] = "Main (3 col)"
-terms[main_3][vocab_module] = "features_ns_promo_topic_region"
-terms[main_3][weight] = "-8"
-terms[main_3][parent][] = "2"
+terms[main_3][name] = Main (3 col)
+terms[main_3][vocab_module] = features_ns_promo_topic_region
+terms[main_3][weight] = -8
+terms[main_3][parent][] = 2
 
-terms[aside][name] = "Aside"
-terms[aside][vocab_module] = "features_ns_promo_topic_region"
-terms[aside][weight] = "-7"
+terms[aside][name] = Aside
+terms[aside][vocab_module] = features_ns_promo_topic_region
+terms[aside][weight] = -7
