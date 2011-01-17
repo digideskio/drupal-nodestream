@@ -69,7 +69,7 @@ projects[ns_core][download][branch] = master
 ; Required for bug fixes.
 projects[translation_management][download][type] = "cvs"
 projects[translation_management][download][module] = "contributions/modules/translation_management"
-projects[translation_management][download][revision] = "DRUPAL-6--1:2010-11-18"
+projects[translation_management][download][revision] = "DRUPAL-6--1:2011-01-17"
 
 ; Required for pluggable backend.
 projects[views][download][type] = "cvs"
