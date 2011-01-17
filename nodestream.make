@@ -124,3 +124,6 @@ projects[views][patch][] = http://drupal.org/files/issues/views-dont-use-tokens-
 
 ; http://drupal.org/node/1029726
 projects[translation_management][patch][] = http://drupal.org/files/issues/translation_management_wysiwyg_support_for_cck_textarea.patch
+
+; http://drupal.org/node/1029784
+projects[translation_management][patch][] = http://drupal.org/files/issues/translation_management_remove_popup.patch
