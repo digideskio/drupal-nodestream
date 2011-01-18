@@ -127,3 +127,6 @@ projects[translation_management][patch][] = http://drupal.org/files/issues/trans
 
 ; http://drupal.org/node/1029784
 projects[translation_management][patch][] = http://drupal.org/files/issues/translation_management_remove_popup.patch
+
+; http://drupal.org/node/1030956
+projects[translation_management][patch][] = http://drupal.org/files/issues/translation_management_set_to_finished_if_empty_field_data.patch
