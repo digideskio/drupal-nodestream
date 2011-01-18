@@ -45,6 +45,7 @@ dependencies[] = token
 dependencies[] = scheduler
 dependencies[] = semanticviews
 dependencies[] = strongarm
+dependencies[] = vertical_tabs
 dependencies[] = views
 dependencies[] = views_content
 dependencies[] = views_rss

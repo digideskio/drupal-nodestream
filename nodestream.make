@@ -40,6 +40,7 @@ projects[strongarm][version] = 2.0
 projects[token][version] = 1.15
 projects[translation_management][version] = 1.21
 projects[twitter][version] = 2.6
+projects[vertical_tabs][version] = 1.0-rc1
 projects[views_rss][version] = 1.0-beta5
 projects[views_slideshow][version] = 2.3
 projects[webform][version] = 3.5
