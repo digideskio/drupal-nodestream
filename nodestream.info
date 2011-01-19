@@ -57,8 +57,10 @@ dependencies[] = cache_actions
 ; NodeStream
 
 dependencies[] = ns_article
+dependencies[] = ns_article_comment
 dependencies[] = ns_promo
 dependencies[] = ns_blog
+dependencies[] = ns_blog_comment
 dependencies[] = ns_contributor
 dependencies[] = ns_core
 dependencies[] = ns_defaults
