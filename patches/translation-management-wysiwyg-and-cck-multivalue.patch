@@ -8,7 +8,7 @@ RCS file: /cvs/drupal-contrib/contributions/modules/translation_management/icl_t
 retrieving revision 1.55.2.6
 diff -u -p -r1.55.2.6 icl_translate.editor_form.inc
 --- icl_translate/icl_translate.editor_form.inc	17 Dec 2010 04:01:47 -0000	1.55.2.6
-+++ icl_translate/icl_translate.editor_form.inc	19 Jan 2011 13:21:18 -0000
++++ icl_translate/icl_translate.editor_form.inc	19 Jan 2011 14:37:47 -0000
 @@ -133,7 +133,7 @@ function icl_translate_editor($form) {
        $form[$field['field_type']] = array (
          '#type' => 'fieldset', 
@@ -18,7 +18,7 @@ diff -u -p -r1.55.2.6 icl_translate.editor_form.inc
        );
        
        // Check if doesn't need update, compare previous requests
-@@ -174,24 +174,62 @@ function icl_translate_editor($form) {
+@@ -174,24 +174,64 @@ function icl_translate_editor($form) {
          '#name' => $name . '[field_finished]',
          '#default_value' => $finished
        );
@@ -37,6 +37,7 @@ diff -u -p -r1.55.2.6 icl_translate.editor_form.inc
 -      );
 -      
 -      if (user_access('administer filters') && $type['type'] == 'node' && $field['field_type'] == 'body') {
+-        $form[$field['field_type']]['field_data_translated']['format'] = filter_form($format, NULL, array($field['field_type'], 'field_data_translated_format'));
 +      // Set translation content field
 +      if (is_array($field_data_translated)) {
 +        $form[$field['field_type']]['field_data_translated'] = array(
@@ -87,16 +88,18 @@ diff -u -p -r1.55.2.6 icl_translate.editor_form.inc
 +               $cck_area = true;
 +             }
 +        }
-         $form[$field['field_type']]['field_data_translated']['format'] = filter_form($format, NULL, array($field['field_type'], 'field_data_translated_format'));
-       }
--      
++        if ($type['type'] == 'node' && ($field['field_type'] == 'body'  || $cck_area)) {
++          $form[$field['field_type']]['field_data_translated']['format'] = filter_form($format, NULL, array($field['field_type'], 'field_data_translated_format'));
++        }
++      }
 +      if (is_array($field_data)) {
 +        $field_data = implode('<br />', $field_data);
-+      }
+       }
+-      
        // Set original content field
        $form[$field['field_type']]['field_data'] = _icl_wrapper_form_create_markup(array(
          '#value' => '<div class="icl_translate_hidden original_data">'
-@@ -250,7 +288,7 @@ function icl_translate_editor_submit(&$f
+@@ -250,7 +290,7 @@ function icl_translate_editor_submit(&$f
    if (isset($_POST['rid'])) {
      $rid = $_POST['rid'];
    }
@@ -105,7 +108,7 @@ diff -u -p -r1.55.2.6 icl_translate.editor_form.inc
    if (!isset($_POST['finished'])) {
      _icl_wrapper_form_create_redirect($form, array('translator'));
    }
-@@ -275,15 +313,12 @@ function icl_translate_editor_submit(&$f
+@@ -275,15 +315,12 @@ function icl_translate_editor_submit(&$f
        
        // Process CCK
        if ($type == 'CCK') {
@@ -124,7 +127,7 @@ diff -u -p -r1.55.2.6 icl_translate.editor_form.inc
            // Autosave
            if (isset($_REQUEST['icl_ajax'])) {
              _icl_translate_editor_autosave($rid, 'CCK[' . $cck . ']', $cck_update, $cck_data['field_finished']);
-@@ -405,11 +440,6 @@ function _icl_translate_editor_sanitize_
+@@ -405,11 +442,6 @@ function _icl_translate_editor_sanitize_
      
      default:
        $data = unserialize($data);
@@ -136,10 +139,3 @@ diff -u -p -r1.55.2.6 icl_translate.editor_form.inc
    }
    return $data;
  }
-@@ -794,4 +824,4 @@ function _icl_translate_editor_get_eleme
-   }
-   
-   return $element_type;
--}
-\ No newline at end of file
-+}
