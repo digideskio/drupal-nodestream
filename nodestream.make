@@ -129,5 +129,8 @@ projects[translation_management][patch][] = http://drupal.org/files/issues/trans
 ; http://drupal.org/node/1030956
 projects[translation_management][patch][] = http://drupal.org/files/issues/translation_management_set_to_finished_if_empty_field_data.patch
 
+; http://drupal.org/node/1033580
+projects[translation_management][patch][] = http://drupal.org/files/issues/translation-management-fix-dashboard-submit-disable.patch
+
 ; Custom patch
 projects[translation_management][patch][] = https://github.com/nodeone/drupal-nodestream/raw/master/patches/translation-management-wysiwyg-and-cck-multivalue.patch
