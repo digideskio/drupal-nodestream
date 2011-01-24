@@ -51,7 +51,7 @@ projects[wysiwyg][version] = 2.2
 ; Parallell development with this profile.
 projects[dynamic_formatters][download][type] = cvs
 projects[dynamic_formatters][download][module] = contributions/modules/dynamic_formatters
-projects[dynamic_formatters][download][revision] = DRUPAL-6--1-0-ALPHA3
+projects[dynamic_formatters][download][revision] = DRUPAL-6--1
 
 ; Need dev for various features.
 projects[menu_block][download][type] = cvs
