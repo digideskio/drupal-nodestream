@@ -133,5 +133,8 @@ projects[translation_management][patch][] = http://drupal.org/files/issues/trans
 ; http://drupal.org/node/1033580
 projects[translation_management][patch][] = http://drupal.org/files/issues/translation-management-fix-dashboard-submit-disable.patch
 
+; http://drupal.org/node/1038144
+projects[translation_management][patch][] = http://drupal.org/files/issues/translation-management-translator-must-have-job-id.patch
+
 ; Custom patch
 projects[translation_management][patch][] = https://github.com/nodeone/drupal-nodestream/raw/master/patches/translation-management-wysiwyg-and-cck-multivalue.patch
