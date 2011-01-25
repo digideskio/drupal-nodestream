@@ -53,6 +53,7 @@ dependencies[] = views_slideshow
 dependencies[] = views_slideshow_singleframe
 dependencies[] = wysiwyg
 dependencies[] = cache_actions
+dependencies[] = menutrails
 
 ; NodeStream
 
