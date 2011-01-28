@@ -75,6 +75,14 @@ projects[views][download][type] = cvs
 projects[views][download][module] = contributions/modules/views
 projects[views][download][revision] = DRUPAL-6--3:2011-01-15
 
+
+; Parallell development with this profile.
+projects[nodereference_filters][download][type] = cvs
+projects[nodereference_filters][download][module] = contributions/modules/nodereference_filters
+projects[nodereference_filters][download][revision] = DRUPAL-6--1
+
+
+
 ; Stable themes
 
 projects[seven][version] = 1.0-beta13
