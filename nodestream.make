@@ -38,7 +38,7 @@ projects[scheduler][version] = 1.8
 projects[semanticviews][version] = 1.1
 projects[strongarm][version] = 2.0
 projects[token][version] = 1.15
-projects[translation_management][version] = 1.21
+;projects[translation_management][version] = 1.21
 projects[twitter][version] = 2.6
 projects[vertical_tabs][version] = 1.0-rc1
 projects[views_rss][version] = 1.0-beta5
@@ -134,16 +134,16 @@ libraries[profiler][patch][] = http://drupal.org/files/issues/profiler-install-f
 projects[views][patch][] = http://drupal.org/files/issues/views-dont-use-tokens-with-node-links.patch
 
 ; http://drupal.org/node/1029784
-projects[translation_management][patch][] = http://drupal.org/files/issues/translation_management_remove_popup.patch
+;projects[translation_management][patch][] = http://drupal.org/files/issues/translation_management_remove_popup.patch
 
 ; http://drupal.org/node/1030956
-projects[translation_management][patch][] = http://drupal.org/files/issues/translation_management_set_to_finished_if_empty_field_data.patch
+;projects[translation_management][patch][] = http://drupal.org/files/issues/translation_management_set_to_finished_if_empty_field_data.patch
 
 ; http://drupal.org/node/1033580
-projects[translation_management][patch][] = http://drupal.org/files/issues/translation-management-fix-dashboard-submit-disable.patch
+;projects[translation_management][patch][] = http://drupal.org/files/issues/translation-management-fix-dashboard-submit-disable.patch
 
 ; http://drupal.org/node/1038144
-projects[translation_management][patch][] = http://drupal.org/files/issues/translation-management-translator-must-have-job-id.patch
+;projects[translation_management][patch][] = http://drupal.org/files/issues/translation-management-translator-must-have-job-id.patch
 
 ; Custom patch
-projects[translation_management][patch][] = https://github.com/nodeone/drupal-nodestream/raw/master/patches/translation-management-wysiwyg-and-cck-multivalue.patch
+;projects[translation_management][patch][] = https://github.com/nodeone/drupal-nodestream/raw/master/patches/translation-management-wysiwyg-and-cck-multivalue.patch
