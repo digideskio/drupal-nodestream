@@ -29,6 +29,7 @@ projects[imagefield][version] = 3.9
 projects[jquery_ui][version] = 1.4
 projects[jquery_update][version] = 2.0-alpha1
 projects[modalframe][version] = 1.7
+projects[mollom][version] = 1.15
 projects[noderelationships][version] = 1.6
 projects[openlayers][version] = 2.0-alpha10
 projects[panels][version] = 3.9
