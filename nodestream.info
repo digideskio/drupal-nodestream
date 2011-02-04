@@ -32,6 +32,7 @@ dependencies[] = jquery_ui
 dependencies[] = jquery_update
 dependencies[] = menu_block
 dependencies[] = modalframe
+dependencies[] = mollom
 dependencies[] = nodereference
 dependencies[] = noderelationships
 dependencies[] = optionwidgets
