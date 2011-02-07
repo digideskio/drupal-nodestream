@@ -103,13 +103,6 @@ projects[precision][download][type] = git
 projects[precision][download][url] = git@github.com:nodeone/drupal-precision.git
 projects[precision][download][branch] = master
 
-; Subtheme for seven with some tweeks
-projects[ns_seven][type] = theme
-projects[ns_seven][download][type] = git
-projects[ns_seven][download][url] = git@github.com:bobodrone/ns_seven.git
-projects[ns_seven][download][branch] = master
-
-
 ; Libraries
 
 libraries[jquery_ui][download][type] = get
