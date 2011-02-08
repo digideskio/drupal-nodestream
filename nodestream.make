@@ -11,7 +11,7 @@ core = 6.x
 ; Stable modules
 
 projects[admin][version] = 2.0
-projects[cache_actions] = 2.0-beta1
+projects[cache_actions] = 2.0-beta2
 projects[cck][version] = 2.9
 projects[crossclone][version] = 1.0-alpha1
 projects[ctools][version] = 1.8
