@@ -219,6 +219,7 @@ function nodestream_install_wysiwyg() {
         'Copy' => 1,
         'Paste' => 1,
         'PasteFromWord' => 1,
+        'PasteText' => 1,
         'ShowBlocks' => 1,
         'RemoveFormat' => 1,
         'SpecialChar' => 1,
