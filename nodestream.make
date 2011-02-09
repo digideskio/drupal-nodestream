@@ -47,7 +47,6 @@ projects[views_slideshow][version] = 2.3
 projects[webform][version] = 3.5
 projects[wysiwyg][version] = 2.2
 projects[menutrails][version] = 1.1
-projects[views_bulk_operations][version] = 1.10
 projects[link][version] = 2.9
 
 ; Unstable modules
