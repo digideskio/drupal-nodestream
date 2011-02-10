@@ -28,6 +28,7 @@ dependencies[] = imageapi
 dependencies[] = imageapi_gd
 dependencies[] = imagecache
 dependencies[] = imagefield
+dependencies[] = libraries
 dependencies[] = jquery_ui
 dependencies[] = jquery_update
 dependencies[] = menu_block

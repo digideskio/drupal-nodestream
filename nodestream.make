@@ -26,7 +26,6 @@ projects[i18n][version] = 1.7
 projects[imageapi][version] = 1.9
 projects[imagecache][version] = 2.0-beta10
 projects[imagefield][version] = 3.9
-projects[jquery_ui][version] = 1.4
 projects[jquery_update][version] = 2.0-alpha1
 projects[modalframe][version] = 1.7
 projects[mollom][version] = 1.15
@@ -39,7 +38,6 @@ projects[scheduler][version] = 1.8
 projects[semanticviews][version] = 1.1
 projects[strongarm][version] = 2.0
 projects[token][version] = 1.15
-;projects[translation_management][version] = 1.21
 projects[twitter][version] = 2.6
 projects[vertical_tabs][version] = 1.0-rc1
 projects[views_rss][version] = 1.0-beta5
@@ -48,8 +46,14 @@ projects[webform][version] = 3.5
 projects[wysiwyg][version] = 2.2
 projects[menutrails][version] = 1.1
 projects[link][version] = 2.9
+projects[libraries][version] = 1.0
 
 ; Unstable modules
+
+; Required for support for library api.
+projects[jquery_ui][download][type] = cvs
+projects[jquery_ui][download][module] = contributions/modules/jquery_ui
+projects[jquery_ui][download][revision] = DRUPAL-6--1:2011-02-10
 
 ; Parallell development with this profile.
 projects[dynamic_formatters][download][type] = cvs
@@ -83,8 +87,6 @@ projects[nodereference_filters][download][type] = cvs
 projects[nodereference_filters][download][module] = contributions/modules/nodereference_filters
 projects[nodereference_filters][download][revision] = DRUPAL-6--1
 
-
-
 ; Stable themes
 
 projects[seven][version] = 1.0-beta13
@@ -103,20 +105,6 @@ projects[precision][download][type] = git
 projects[precision][download][url] = git@github.com:nodeone/drupal-precision.git
 projects[precision][download][branch] = master
 
-; Libraries
-
-libraries[jquery_ui][download][type] = get
-libraries[jquery_ui][download][url] = http://jquery-ui.googlecode.com/files/jquery-ui-1.7.3.zip
-libraries[jquery_ui][destination] = modules/jquery_ui
-libraries[jquery_ui][directory_name] = jquery.ui
-
-libraries[ckeditor][download][type] = get
-libraries[ckeditor][download][url] = http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.4/ckeditor_3.4.tar.gz
-libraries[ckeditor][destination] = libraries
-
-libraries[profiler][download][type] = get
-libraries[profiler][download][url] = http://ftp.drupal.org/files/projects/profiler-6.x-2.0-beta1.tar.gz
-
 ; Patches
 
 ; http://drupal.org/node/885412
@@ -133,18 +121,3 @@ libraries[profiler][patch][] = http://drupal.org/files/issues/profiler-install-f
 
 ; http://drupal.org/node/1009646
 projects[views][patch][] = http://drupal.org/files/issues/views-dont-use-tokens-with-node-links.patch
-
-; http://drupal.org/node/1029784
-;projects[translation_management][patch][] = http://drupal.org/files/issues/translation_management_remove_popup.patch
-
-; http://drupal.org/node/1030956
-;projects[translation_management][patch][] = http://drupal.org/files/issues/translation_management_set_to_finished_if_empty_field_data.patch
-
-; http://drupal.org/node/1033580
-;projects[translation_management][patch][] = http://drupal.org/files/issues/translation-management-fix-dashboard-submit-disable.patch
-
-; http://drupal.org/node/1038144
-;projects[translation_management][patch][] = http://drupal.org/files/issues/translation-management-translator-must-have-job-id.patch
-
-; Custom patch
-;projects[translation_management][patch][] = https://github.com/nodeone/drupal-nodestream/raw/master/patches/translation-management-wysiwyg-and-cck-multivalue.patch
