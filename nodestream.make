@@ -121,3 +121,6 @@ projects[disqus][patch][] = http://drupal.org/files/issues/disqus-views-relation
 
 ; http://drupal.org/node/1009646
 projects[views][patch][] = http://drupal.org/files/issues/views-dont-use-tokens-with-node-links.patch
+
+; http://drupal.org/node/1058606
+projects[modalframe][patch][] = http://drupal.org/files/issues/child_js_fix_External_links.patch
