@@ -111,13 +111,13 @@ projects[precision][download][branch] = master
 projects[disqus][patch][] = http://drupal.org/files/issues/disqus-views-relationships.patch
 
 ; http://drupal.org/node/906106
-libraries[profiler][patch][] = http://drupal.org/files/issues/profiler.906106-11.patch
+;libraries[profiler][patch][] = http://drupal.org/files/issues/profiler.906106-11.patch
 
 ; http://drupal.org/node/954996
-libraries[profiler][patch][] = http://drupal.org/files/issues/954996-profiler-trigger-faux-exportables-5.patch
+;libraries[profiler][patch][] = http://drupal.org/files/issues/954996-profiler-trigger-faux-exportables-5.patch
 
 ; http://drupal.org/node/1013430
-libraries[profiler][patch][] = http://drupal.org/files/issues/profiler-install-files.patch
+;libraries[profiler][patch][] = http://drupal.org/files/issues/profiler-install-files.patch
 
 ; http://drupal.org/node/1009646
 projects[views][patch][] = http://drupal.org/files/issues/views-dont-use-tokens-with-node-links.patch
