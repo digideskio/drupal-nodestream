@@ -87,7 +87,6 @@ projects[nodereference_filters][download][revision] = DRUPAL-6--1
 ; Stable themes
 
 projects[seven][version] = 1.0-beta13
-projects[precision][version] = 1.0-beta1
 
 ; Unstable themes
 
@@ -97,7 +96,9 @@ projects[ns_theme][download][type] = git
 projects[ns_theme][download][url] = git@github.com:nodeone/drupal-ns_theme.git
 projects[ns_theme][download][branch] = master
 
-
+projects[precision][download][type] = cvs
+projects[precision][download][module] = contributions/themes/precision
+projects[precision][download][revision] = DRUPAL-6--1
 
 
 ; Patches
