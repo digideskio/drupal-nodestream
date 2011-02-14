@@ -91,10 +91,9 @@ projects[seven][version] = 1.0-beta13
 ; Unstable themes
 
 ; Parallell development with this profile.
-projects[ns_theme][type] = theme
-projects[ns_theme][download][type] = git
-projects[ns_theme][download][url] = git@github.com:nodeone/drupal-ns_theme.git
-projects[ns_theme][download][branch] = master
+projects[ns_theme][download][type] = cvs
+projects[ns_theme][download][module] = contributions/themes/ns_theme
+projects[ns_theme][download][revision] = DRUPAL-6--1
 
 projects[precision][download][type] = cvs
 projects[precision][download][module] = contributions/themes/precision
