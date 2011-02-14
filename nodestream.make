@@ -69,7 +69,7 @@ projects[menu_block][download][module] = contributions/modules/menu_block
 projects[menu_block][download][revision] = DRUPAL-6--2:2011-01-15
 
 ; Parallell development with this profile.
-projects[ns_core][type] = cvs
+projects[ns_core][download][type] = cvs
 projects[ns_core][download][module] = contributions/modules/ns_core
 projects[ns_core][download][revision] = DRUPAL-6--1
 
