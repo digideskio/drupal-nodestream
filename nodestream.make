@@ -46,10 +46,11 @@ projects[vertical_tabs][version] = 1.0-rc1
 projects[views_rss][version] = 1.0-beta5
 projects[views_slideshow][version] = 2.3
 projects[webform][version] = 3.5
-projects[wysiwyg][version] = 2.2
+projects[wysiwyg][version] = 2.3
 projects[menutrails][version] = 1.1
 projects[link][version] = 2.9
 projects[libraries][version] = 1.0
+projects[menu_block][version] = 2.4
 
 ; Unstable modules
 
@@ -62,11 +63,6 @@ projects[jquery_ui][download][revision] = DRUPAL-6--1:2011-02-10
 projects[dynamic_formatters][download][type] = cvs
 projects[dynamic_formatters][download][module] = contributions/modules/dynamic_formatters
 projects[dynamic_formatters][download][revision] = DRUPAL-6--1
-
-; Need dev for various features.
-projects[menu_block][download][type] = cvs
-projects[menu_block][download][module] = contributions/modules/menu_block
-projects[menu_block][download][revision] = DRUPAL-6--2:2011-01-15
 
 ; Parallell development with this profile.
 projects[ns_core][download][type] = cvs
