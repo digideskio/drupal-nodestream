@@ -21,7 +21,6 @@ projects[emfield][version] = 2.4
 projects[media_vimeo][version] = 1.1
 projects[media_youtube][version] = 1.3
 projects[media_bliptv] = 1.0-alpha2
-projects[fb_social][version] = 1.0-beta4
 projects[features][version] = 1.0
 projects[filefield][version] = 3.9
 projects[geotaxonomy][version] = 2.0-beta3
@@ -31,7 +30,6 @@ projects[imagecache][version] = 2.0-beta10
 projects[imagefield][version] = 3.9
 projects[jquery_update][version] = 2.0-alpha1
 projects[modalframe][version] = 1.7
-projects[mollom][version] = 1.15
 projects[noderelationships][version] = 1.6
 projects[openlayers][version] = 2.0-alpha10
 projects[panels][version] = 3.9
@@ -73,12 +71,6 @@ projects[ns_core][download][revision] = DRUPAL-6--1
 projects[views][download][type] = cvs
 projects[views][download][module] = contributions/modules/views
 projects[views][download][revision] = DRUPAL-6--3:2011-01-15
-
-
-; Parallell development with this profile.
-projects[nodereference_filters][download][type] = cvs
-projects[nodereference_filters][download][module] = contributions/modules/nodereference_filters
-projects[nodereference_filters][download][revision] = DRUPAL-6--1
 
 ; Stable themes
 
