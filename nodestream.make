@@ -69,15 +69,9 @@ projects[menu_block][download][module] = contributions/modules/menu_block
 projects[menu_block][download][revision] = DRUPAL-6--2:2011-01-15
 
 ; Parallell development with this profile.
-projects[ns_core][type] = module
-projects[ns_core][download][type] = git
-projects[ns_core][download][url] = git@github.com:nodeone/drupal-ns_core.git
-projects[ns_core][download][branch] = master
-
-; Required for bug fixes.
-projects[translation_management][download][type] = "cvs"
-projects[translation_management][download][module] = "contributions/modules/translation_management"
-projects[translation_management][download][revision] = "DRUPAL-6--1:2011-01-17"
+projects[ns_core][type] = cvs
+projects[ns_core][download][module] = contributions/modules/ns_core
+projects[ns_core][download][revision] = DRUPAL-6--1
 
 ; Required for pluggable backend.
 projects[views][download][type] = cvs
@@ -93,6 +87,7 @@ projects[nodereference_filters][download][revision] = DRUPAL-6--1
 ; Stable themes
 
 projects[seven][version] = 1.0-beta13
+projects[precision][version] = 1.0-beta1
 
 ; Unstable themes
 
@@ -102,11 +97,8 @@ projects[ns_theme][download][type] = git
 projects[ns_theme][download][url] = git@github.com:nodeone/drupal-ns_theme.git
 projects[ns_theme][download][branch] = master
 
-; Parallell development with this profile.
-projects[precision][type] = theme
-projects[precision][download][type] = git
-projects[precision][download][url] = git@github.com:nodeone/drupal-precision.git
-projects[precision][download][branch] = master
+
+
 
 ; Patches
 
